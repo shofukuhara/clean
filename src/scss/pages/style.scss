@@ -138,6 +138,17 @@ body {
     &__sectitle {
       font-size: v.$FontPcSectitle;
       margin-bottom: 80px;
+      position: relative;
+      &::after {
+        content: "ABOUT";
+        font-size: 20rem;
+        color: #F8F8F8;
+        text-shadow: 1px 1px 0 v.$green;
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        line-height: 0;
+      }
     }
     &__text {
       width: 50%;
@@ -164,17 +175,52 @@ body {
     &__sectitle {
       font-size: v.$FontPcSectitle;
       margin-bottom: 80px;
+      position: relative;
+      &::after {
+        content: "SERVICE";
+        font-size: 20rem;
+        color: #F8F8F8;
+        text-shadow: 1px 1px 0 v.$green;
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        line-height: 0;
+      }
     }
     &__list {
       display: flex;
       justify-content: space-between;
-      &-link {
-        width: 30%;
-        height: 100%;
-      }
+      width: 100%;
       &-item {
         width: 30%;
         position: relative;
+        &:hover {
+          .service__list-box {
+            &::before {
+              content: "";
+              position: absolute;
+              border-top: 3px solid #fff;
+              border-right: 3px solid #fff; 
+              width: 10px;
+              height: 10px;
+              right: 15px;
+              top: 17px;
+              transform: rotate(0deg);
+              transition: 0.2s;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              width: 34px;
+              height: 3px;
+              background-color: #fff;
+              right: 11px;
+              bottom: 28px;
+              transform: rotate(-45deg);
+              transition: 0.2s;
+            }
+          }
+        }
       }
       &-text {
         position: absolute;
@@ -182,17 +228,20 @@ body {
         top: 10px;
         color: v.$wh;
         font-size: 2.4rem;
+        z-index: 3;
+        font-weight: bold;
       }
       &-img {
         width: 100%;
       }
       &-box {
         position: absolute;
+        left: 0;
         bottom: 8px;
         display: block;
         width: 60px;
         height: 60px;
-        background-color: v.$bl;
+        background-color: v.$green;
         &::before {
           content: "";
           position: absolute;
@@ -200,7 +249,7 @@ body {
           border-right: 3px solid #fff; 
           width: 10px;
           height: 10px;
-          right: 22px;
+          right: 18px;
           top: 20px;
           transform: rotate(0deg);
         }
@@ -210,11 +259,56 @@ body {
           width: 30px;
           height: 3px;
           background-color: #fff;
-          right: 20px;
+          right: 16px;
           bottom: 25px;
           transform: rotate(-45deg);
         }
       }
+    }
+  }
+}
+
+.news {
+  @include m.mq('sp') {
+    
+  }
+  @include m.mq('tab') {
+    
+  }
+  @include m.mq('pc') {
+    margin-bottom: 160px;
+    &__sectitle {
+      font-size: v.$FontPcSectitle;
+      margin-bottom: 80px;
+      position: relative;
+      &::after {
+        content: "NEWS";
+        font-size: 20rem;
+        color: #F8F8F8;
+        text-shadow: 1px 1px 0 v.$green;
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        line-height: 0;
+      }
+    }
+    &__box {
+      width: 70%;
+      margin-left: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border-top: 1px solid rgba(178, 178, 178, 0.591);
+      padding: 20px 0;
+      &:last-child {
+        border-bottom: 1px solid rgba(178, 178, 178, 0.591);
+      }
+    }
+    &__dt {
+      width: 30%;
+    }
+    &__dd{
+      width: 70%;
     }
   }
 }
