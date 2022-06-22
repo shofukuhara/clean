@@ -123,7 +123,7 @@ html {
 
 @media screen and (min-width: 1025px) {
   .bg {
-    padding-top: 320px;
+    padding-top: 21.5vw;
     margin-bottom: 240px;
   }
   .bg__content {
@@ -131,6 +131,7 @@ html {
   }
   .bg__imgbox {
     overflow: hidden;
+    height: 60vw;
   }
   .bg__imgbox-img {
     width: 100%;
@@ -159,22 +160,23 @@ html {
     margin-bottom: 240px;
   }
   .about__sectitle {
-    font-size: 6rem;
     font-family: "Shippori Mincho", serif;
     font-weight: 700;
-    color: #02AF98;
     margin-bottom: 80px;
     position: relative;
   }
-  .about__sectitle::after {
-    content: "ABOUT";
-    font-weight: 400;
-    font-size: 20rem;
+  .about__sectitle-gr {
+    font-size: 6rem;
+    color: #02AF98;
+    line-height: 1.6;
+  }
+  .about__sectitle-bg {
+    font-size: 16rem;
     color: #F8F8F8;
+    line-height: 0;
     z-index: -1;
     position: absolute;
     left: 0;
-    line-height: 0;
   }
   .about__text {
     width: 50%;
@@ -193,26 +195,29 @@ html {
     margin-bottom: 240px;
   }
   .service__sectitle {
-    font-size: 6rem;
     font-family: "Shippori Mincho", serif;
     font-weight: 700;
-    color: #02AF98;
     margin-bottom: 80px;
     position: relative;
   }
-  .service__sectitle::after {
-    content: "SERVICE";
-    font-size: 20rem;
+  .service__sectitle-gr {
+    font-size: 6rem;
+    color: #02AF98;
+    line-height: 1.6;
+  }
+  .service__sectitle-bg {
+    font-size: 16rem;
     color: #F8F8F8;
+    line-height: 0;
     z-index: -1;
     position: absolute;
     left: 0;
-    line-height: 0;
   }
   .service__list {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    position: relative;
   }
   .service__list-item {
     width: 30%;
@@ -250,13 +255,25 @@ html {
     z-index: 3;
     font-weight: bold;
   }
+  .service__list-imgbox {
+    width: 100%;
+    height: 100;
+    overflow: hidden;
+  }
+  .service__list-imgbox:hover .service__list-img {
+    transform: scale(1.2);
+    transition: 1s all;
+  }
   .service__list-img {
     width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    transition: 1s all;
   }
   .service__list-box {
     position: absolute;
     left: 0;
-    bottom: 8px;
+    bottom: 0;
     display: block;
     width: 60px;
     height: 60px;
@@ -290,21 +307,23 @@ html {
     margin-bottom: 240px;
   }
   .news__sectitle {
-    font-size: 6rem;
     font-family: "Shippori Mincho", serif;
     font-weight: 700;
-    color: #02AF98;
     margin-bottom: 80px;
     position: relative;
   }
-  .news__sectitle::after {
-    content: "NEWS";
-    font-size: 20rem;
+  .news__sectitle-gr {
+    font-size: 6rem;
+    color: #02AF98;
+    line-height: 1.6;
+  }
+  .news__sectitle-bg {
+    font-size: 16rem;
     color: #F8F8F8;
+    line-height: 0;
     z-index: -1;
     position: absolute;
     left: 0;
-    line-height: 0;
   }
   .news__box {
     width: 70%;
@@ -331,21 +350,23 @@ html {
     margin-bottom: 160px;
   }
   .company__sectitle {
-    font-size: 6rem;
     font-family: "Shippori Mincho", serif;
     font-weight: 700;
-    color: #02AF98;
     margin-bottom: 80px;
     position: relative;
   }
-  .company__sectitle::after {
-    content: "COMPANY";
-    font-size: 20rem;
+  .company__sectitle-gr {
+    font-size: 6rem;
+    color: #02AF98;
+    line-height: 1.6;
+  }
+  .company__sectitle-bg {
+    font-size: 16rem;
     color: #F8F8F8;
+    line-height: 0;
     z-index: -1;
     position: absolute;
     left: 0;
-    line-height: 0;
   }
   .company__flex {
     display: flex;
