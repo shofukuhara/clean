@@ -99,17 +99,17 @@ html {
   }
   .header__list-item {
     margin-left: 40px;
+    position: relative;
   }
   .header__list-link {
     color: #252525;
     font-size: 1.6rem;
-    position: relative;
   }
   .header__list-link::after {
     content: "";
     width: 0;
     height: 1px;
-    background-color: #252525;
+    background-color: #02AF98;
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -123,12 +123,19 @@ html {
 
 @media screen and (min-width: 1025px) {
   .bg {
-    margin: 320px 0 160px;
-    background-image: url(/src/img/bg.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 780px;
+    padding-top: 320px;
+    margin-bottom: 240px;
+  }
+  .bg__content {
+    overflow: hidden;
+  }
+  .bg__imgbox {
+    overflow: hidden;
+  }
+  .bg__imgbox-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
   .bg__text {
     text-align: center;
@@ -149,18 +156,21 @@ html {
 
 @media screen and (min-width: 1025px) {
   .about {
-    margin-bottom: 160px;
+    margin-bottom: 240px;
   }
   .about__sectitle {
     font-size: 6rem;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
+    color: #02AF98;
     margin-bottom: 80px;
     position: relative;
   }
   .about__sectitle::after {
     content: "ABOUT";
+    font-weight: 400;
     font-size: 20rem;
     color: #F8F8F8;
-    text-shadow: 1px 1px 0 #46E678;
     z-index: -1;
     position: absolute;
     left: 0;
@@ -180,10 +190,13 @@ html {
 
 @media screen and (min-width: 1025px) {
   .service {
-    margin-bottom: 160px;
+    margin-bottom: 240px;
   }
   .service__sectitle {
     font-size: 6rem;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
+    color: #02AF98;
     margin-bottom: 80px;
     position: relative;
   }
@@ -191,7 +204,6 @@ html {
     content: "SERVICE";
     font-size: 20rem;
     color: #F8F8F8;
-    text-shadow: 1px 1px 0 #46E678;
     z-index: -1;
     position: absolute;
     left: 0;
@@ -248,7 +260,7 @@ html {
     display: block;
     width: 60px;
     height: 60px;
-    background-color: #46E678;
+    background-color: #02AF98;
   }
   .service__list-box::before {
     content: "";
@@ -275,10 +287,13 @@ html {
 
 @media screen and (min-width: 1025px) {
   .news {
-    margin-bottom: 160px;
+    margin-bottom: 240px;
   }
   .news__sectitle {
     font-size: 6rem;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
+    color: #02AF98;
     margin-bottom: 80px;
     position: relative;
   }
@@ -286,7 +301,6 @@ html {
     content: "NEWS";
     font-size: 20rem;
     color: #F8F8F8;
-    text-shadow: 1px 1px 0 #46E678;
     z-index: -1;
     position: absolute;
     left: 0;
@@ -309,6 +323,85 @@ html {
   }
   .news__dd {
     width: 70%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .company {
+    margin-bottom: 160px;
+  }
+  .company__sectitle {
+    font-size: 6rem;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
+    color: #02AF98;
+    margin-bottom: 80px;
+    position: relative;
+  }
+  .company__sectitle::after {
+    content: "COMPANY";
+    font-size: 20rem;
+    color: #F8F8F8;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    line-height: 0;
+  }
+  .company__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .company__box {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .company__box-dt {
+    width: 30%;
+    margin-bottom: 40px;
+  }
+  .company__box-dd {
+    width: 70%;
+  }
+  .company__imgbox {
+    width: 50%;
+    text-align: right;
+  }
+  .company__imgbox-img {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .contact__sectitle {
+    font-size: 6rem;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
+    color: #02AF98;
+    text-align: center;
+    padding: 240px 0;
+    display: block;
+    position: relative;
+  }
+  .contact__sectitle::after {
+    content: "CONTACT";
+    font-size: 20rem;
+    color: #F8F8F8;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .footer__copy {
+    text-align: center;
+    padding: 10px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

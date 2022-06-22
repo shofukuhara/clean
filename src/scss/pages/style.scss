@@ -68,16 +68,16 @@ body {
       justify-content: space-between;
       &-item {
         margin-left: 40px;
-      }
+        position: relative;
+      }      
       &-link {
         color: v.$bl;
         font-size: v.$FontPcList;
-        position: relative;
         &::after {
           content: "";
           width: 0;
           height: 1px;
-          background-color: v.$bl;
+          background-color: v.$green;
           position: absolute;
           bottom: -5px;
           left: 0;
@@ -102,12 +102,19 @@ body {
     
   }
   @include m.mq('pc') {
-    margin: 320px 0 160px;
-    background-image: url(/src/img/bg.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 780px;
+    padding-top: 320px ;
+    margin-bottom: 240px;
+    &__content {
+      overflow: hidden;
+    }
+    &__imgbox {
+      overflow: hidden;
+      &-img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
     &__text {
       text-align: center;
       position: absolute;
@@ -134,16 +141,19 @@ body {
     
   }
   @include m.mq('pc') {
-    margin-bottom: 160px;
+    margin-bottom: 240px;
     &__sectitle {
       font-size: v.$FontPcSectitle;
+      font-family: 'Shippori Mincho', serif;
+      font-weight: 700;
+      color: v.$green;
       margin-bottom: 80px;
       position: relative;
       &::after {
         content: "ABOUT";
+        font-weight: 400;
         font-size: 20rem;
         color: #F8F8F8;
-        text-shadow: 1px 1px 0 v.$green;
         z-index: -1;
         position: absolute;
         left: 0;
@@ -171,16 +181,18 @@ body {
     
   }
   @include m.mq('pc') {
-    margin-bottom: 160px;
+    margin-bottom: 240px;
     &__sectitle {
       font-size: v.$FontPcSectitle;
+      font-family: 'Shippori Mincho', serif;
+      font-weight: 700;
+      color: v.$green;
       margin-bottom: 80px;
       position: relative;
       &::after {
         content: "SERVICE";
         font-size: 20rem;
         color: #F8F8F8;
-        text-shadow: 1px 1px 0 v.$green;
         z-index: -1;
         position: absolute;
         left: 0;
@@ -276,16 +288,18 @@ body {
     
   }
   @include m.mq('pc') {
-    margin-bottom: 160px;
+    margin-bottom: 240px;
     &__sectitle {
       font-size: v.$FontPcSectitle;
+      font-family: 'Shippori Mincho', serif;
+      font-weight: 700;
+      color: v.$green;
       margin-bottom: 80px;
       position: relative;
       &::after {
         content: "NEWS";
         font-size: 20rem;
         color: #F8F8F8;
-        text-shadow: 1px 1px 0 v.$green;
         z-index: -1;
         position: absolute;
         left: 0;
@@ -309,6 +323,108 @@ body {
     }
     &__dd{
       width: 70%;
+    }
+  }
+}
+
+.company {
+  @include m.mq('sp') {
+    
+  }
+  @include m.mq('tab') {
+    
+  }
+  @include m.mq('pc') {
+    margin-bottom: 160px;
+    &__sectitle {
+      font-size: v.$FontPcSectitle;
+      font-family: 'Shippori Mincho', serif;
+      font-weight: 700;
+      color: v.$green;
+      margin-bottom: 80px;
+      position: relative;
+      &::after {
+        content: "COMPANY";
+        font-size: 20rem;
+        color: #F8F8F8;
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        line-height: 0;
+      }
+    }
+    &__flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__box {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &-dt {
+        width:30%;
+        margin-bottom: 40px;
+      }
+      &-dd {
+        width: 70%;
+      }
+    }
+    &__imgbox {
+      width: 50%;
+      text-align: right;
+      &-img {
+        width: 90%;
+      }
+    }
+  }
+}
+.contact {
+  @include m.mq('sp') {
+    
+  }
+  @include m.mq('tab') {
+    
+  }
+  @include m.mq('pc') {
+    &__sectitle {
+      font-size: v.$FontPcSectitle;
+      font-family: 'Shippori Mincho', serif;
+      font-weight: 700;
+      color: v.$green;
+      text-align: center;
+      padding: 240px 0;
+      display: block;
+      position: relative;
+      &::after {
+        content: "CONTACT";
+        font-size: 20rem;
+        color: #F8F8F8;
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 0;
+      }
+      // background-color: #F8F8F8;
+      // background-color: v.$bl;
+      // border: 1px solid v.$green;
+    }
+  }
+}
+.footer {
+  @include m.mq('sp') {
+    
+  }
+  @include m.mq('tab') {
+    
+  }
+  @include m.mq('pc') {
+    &__copy {
+      text-align: center;
+      padding: 10px 0;
     }
   }
 }
