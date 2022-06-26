@@ -199,5 +199,24 @@ ScrollTrigger.matchMedia({
   },
 
   // 599px以下
-  "(max-width: 599px)": function () {},
+  "(max-width: 599px)": function () {
+    const pop01 = ".pop01";
+    // const start01 = 1000;
+    gsap.set(pop01, {
+      opacity: 0,
+      top: "10px",
+      left: "60%",
+      markers: true,
+    });
+    gsap.to(pop01, {
+      scrollTrigger: {
+        trigger: pop01,
+        start: "top center+=100",
+        end: "bottom center",
+        // markers: true,
+      },
+      duration: 1,
+      opacity: 1,
+    });
+  },
 });

@@ -315,7 +315,7 @@ img {
 
 @media screen and (max-width: 599px) {
   .bg {
-    padding-top: 50vh;
+    padding-top: 240px;
     margin-bottom: 140px;
   }
   .bg__content {
@@ -323,7 +323,7 @@ img {
   }
   .bg__imgbox {
     overflow: hidden;
-    height: 80vh;
+    height: 400px;
   }
   .bg__imgbox-img {
     width: 100%;
@@ -333,16 +333,16 @@ img {
   .bg__text {
     text-align: center;
     position: absolute;
-    top: 40vw;
-    left: 50vw;
+    top: 44%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
   .bg__text-ja {
-    font-size: 2vw;
+    font-size: 2rem;
     font-family: "Shippori Mincho", serif;
   }
   .bg__text-en {
-    font-size: 10vw;
+    font-size: 4rem;
     font-weight: bold;
     font-family: "Shippori Mincho", serif;
   }
@@ -893,6 +893,54 @@ img {
   }
 }
 
+@media screen and (max-width: 599px) {
+  .company {
+    margin-bottom: 140px;
+  }
+  .company__sectitle {
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
+    margin-bottom: 80px;
+    position: relative;
+  }
+  .company__sectitle-gr {
+    font-size: 6rem;
+    color: #02AF98;
+    line-height: 1.2;
+  }
+  .company__sectitle-bg {
+    font-size: 7rem;
+    color: #F8F8F8;
+    line-height: 0;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+  }
+  .company__flex {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .company__box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .company__box-dt {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  .company__box-dd {
+    width: 70%;
+  }
+  .company__imgbox {
+    width: 100%;
+  }
+  .company__imgbox-img {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 600px) and (max-width: 1025px) {
   .company {
     margin-bottom: 140px;
@@ -992,6 +1040,29 @@ img {
   }
 }
 
+@media screen and (max-width: 599px) {
+  .contact__sectitle {
+    font-size: 6rem;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
+    color: #02AF98;
+    text-align: center;
+    padding: 100px 0;
+    display: block;
+    position: relative;
+  }
+  .contact__sectitle::after {
+    content: "CONTACT";
+    font-size: 8rem;
+    color: #F8F8F8;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 0;
+  }
+}
 @media screen and (min-width: 600px) and (max-width: 1025px) {
   .contact__sectitle {
     font-size: 6rem;
