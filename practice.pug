@@ -1,0 +1,54 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="src/css/style.css")
+    title Document
+  body
+  header.header
+    .header__flex
+      .header__logo
+        p Clean
+      .header__hamburger
+        span.header__hamburger-line
+        span.header__hamburger-line
+        span.header__hamburger-line
+      nav.header__nav
+        ul.header__list
+          li.header__list-item
+            a(class="header__list-link", href="#") ABOUT
+          li.header__list-item
+            a(class="header__list-link", href="#") SERVICE
+          li.header__list-item
+            a(class="header__list-link", href="#") NEWS
+          li.header__list-item
+            a(class="header__list-link", href="#") COMPANY
+          li.header__list-item
+            a(class="header__list-link", href="#") CONTACT
+  .bg
+    .bg__imgbox
+      picture
+        source(srcset="src/img/bg_sp.png" media="(max-width: 599px)")
+        img(src="src/img/bg.png", class="bg__imgbox-img thumbnail")
+      .bg__text
+        p.bg__text-ja 気持ちの良い、日々を
+        p.bg__text-en Clean&Fresh
+  main 
+    section.about.wrapper
+      h2.about__sectitle
+        span.about__sectitle-gr ABOUT
+        span.about__sectitle-bg ABOUT
+      .about__text.pop01
+        p.about__text-large Let's create a
+          br
+          | beautiful society
+        p.about__text-small テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    section.service.wrapper
+      h2.service__sectitle
+        span.service__sectitle-gr SERVICE
+        span.service__sectitle-bg SERVICE
+
+
+
