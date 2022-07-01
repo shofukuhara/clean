@@ -7,45 +7,104 @@
     <link rel="stylesheet" href="src/css/style.css">
     <title>Document</title>
   </head>
-  <body></body>
-  <header class="header">
-    <div class="header__flex">
-      <div class="header__logo">
-        <p>Clean</p>
+  <body>
+    <header class="header">
+      <div class="header__flex">
+        <div class="header__logo">
+          <p>Clean</p>
+        </div>
+        <div class="header__hamburger"><span class="header__hamburger-line"></span><span class="header__hamburger-line"></span><span class="header__hamburger-line"></span></div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__list-item"><a class="header__list-link" href="#">ABOUT</a></li>
+            <li class="header__list-item"><a class="header__list-link" href="#">SERVICE</a></li>
+            <li class="header__list-item"><a class="header__list-link" href="#">NEWS</a></li>
+            <li class="header__list-item"><a class="header__list-link" href="#">COMPANY</a></li>
+            <li class="header__list-item"><a class="header__list-link" href="#">CONTACT</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="header__hamburger"><span class="header__hamburger-line"></span><span class="header__hamburger-line"></span><span class="header__hamburger-line"></span></div>
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__list-item"><a class="header__list-link" href="#">ABOUT</a></li>
-          <li class="header__list-item"><a class="header__list-link" href="#">SERVICE</a></li>
-          <li class="header__list-item"><a class="header__list-link" href="#">NEWS</a></li>
-          <li class="header__list-item"><a class="header__list-link" href="#">COMPANY</a></li>
-          <li class="header__list-item"><a class="header__list-link" href="#">CONTACT</a></li>
+    </header>
+    <div class="bg">
+      <div class="bg__imgbox">
+        <picture>
+          <source srcset="src/img/bg_sp.png" media="(max-width: 599px)"><img class="bg__imgbox-img thumbnail" src="src/img/bg.png">
+        </picture>
+        <div class="bg__text">
+          <p class="bg__text-ja">気持ちの良い、日々を</p>
+          <p class="bg__text-en">Clean&Fresh</p>
+        </div>
+      </div>
+    </div>
+    <main> 
+      <section class="about wrapper">
+        <h2 class="about__sectitle"><span class="about__sectitle-gr">ABOUT</span><span class="about__sectitle-bg">ABOUT</span></h2>
+        <div class="about__text pop01">
+          <p class="about__text-large">Let's create a<br>beautiful society</p>
+          <p class="about__text-small">テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </section>
+      <section class="service wrapper">
+        <h2 class="service__sectitle"><span class="service__sectitle-gr">SERVICE</span><span class="service__sectitle-bg">SERVICE</span></h2>
+        <ul class="service__list">
+          <li class="service__list-item"><a class="service__list-link" href="#"> 
+              <div class="service__list-imgbox"><img class="service__list-img" src="src/img/service_1.jpg" alt=""></div><span class="service__list-text">クリーニング事業</span><span class="service__list-box"></span></a></li>
+          <li class="service__list-item"><a class="service__list-link" href="#"> 
+              <div class="service__list-imgbox"><img class="service__list-img" src="src/img/service_2.jpg" alt=""></div><span class="service__list-text">掃除事業</span><span class="service__list-box"></span></a></li>
+          <li class="service__list-item"><a class="service__list-link" href="#"> 
+              <div class="service__list-imgbox"><img class="service__list-img" src="src/img/service_3.jpg" alt=""></div><span class="service__list-text">メンテナンス事業</span><span class="service__list-box"></span></a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
-  <div class="bg">
-    <div class="bg__imgbox">
-      <picture>
-        <source srcset="src/img/bg_sp.png" media="(max-width: 599px)"><img class="bg__imgbox-img thumbnail" src="src/img/bg.png">
-      </picture>
-      <div class="bg__text">
-        <p class="bg__text-ja">気持ちの良い、日々を</p>
-        <p class="bg__text-en">Clean&Fresh</p>
-      </div>
-    </div>
-  </div>
-  <main> 
-    <section class="about wrapper">
-      <h2 class="about__sectitle"><span class="about__sectitle-gr">ABOUT</span><span class="about__sectitle-bg">ABOUT</span></h2>
-      <div class="about__text pop01">
-        <p class="about__text-large">Let's create a<br>beautiful society</p>
-        <p class="about__text-small">テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-      </div>
-    </section>
-    <section class="service wrapper">
-      <h2 class="service__sectitle"><span class="service__sectitle-gr">SERVICE</span><span class="service__sectitle-bg">SERVICE</span></h2>
-    </section>
-  </main>
+      </section>
+      <section class="news wrapper">
+        <h2 class="news__sectitle"><span class="news__sectitle-gr">NEWS</span><span class="news__sectitle-bg">NEWS</span></h2>
+        <dl class="news__box">
+          <dt class="news__dt"><span class="news__dt-date">2022.05.01</span><span class="news__dt-title">news</span></dt>
+          <dd class="news__dd">
+            <p class="news__dd-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </dd>
+        </dl>
+        <dl class="news__box">
+          <dt class="news__dt"><span class="news__dt-date">2022.05.01</span><span class="news__dt-title">news</span></dt>
+          <dd class="news__dd">
+            <p class="news__dd-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </dd>
+        </dl>
+        <dl class="news__box">
+          <dt class="news__dt"><span class="news__dt-date">2022.05.01</span><span class="news__dt-title">news</span></dt>
+          <dd class="news__dd">
+            <p class="news__dd-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </dd>
+        </dl>
+      </section>
+      <section class="company wrapper">
+        <h2 class="company__sectitle"><span class="company__sectitle-gr">COMPANY</span><span class="company__sectitle-bg">COMPANY</span></h2>
+        <div class="company__flex">
+          <dl class="company__box">
+            <dt class="company__box-dt">会社名</dt>
+            <dd class="company__box-dd">株式会社Clean</dd>
+            <dt class="company__box-dt">所在地</dt>
+            <dd class="company__box-dd">東京都○○○○○○○○○○</dd>
+            <dt class="company__box-dt">設立</dt>
+            <dd class="company__box-dd">2000年4月1日</dd>
+            <dt class="company__box-dt">代表</dt>
+            <dd class="company__box-dd">○○○○○○○○○○</dd>
+            <dt class="company__box-dt">事業内容</dt>
+            <dd class="company__box-dd">クリーニング事業<br>掃除事業<br>メンテナンス事業</dd>
+          </dl>
+          <div class="company__imgbox"><img class="company__imgbox-img" src="src/img/company.jpg" alt=""></div>
+        </div>
+      </section>
+      <section class="contact"><a class="contact__sectitle" href="#">CONTACT</a></section>
+    </main>
+    <footer class="footer">
+      <p class="footer__coppy">&copy; 株式会社Clean</p>
+    </footer>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.7.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.7.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+    <script src="src/js/main.js"></script>
+  </body>
 </html>

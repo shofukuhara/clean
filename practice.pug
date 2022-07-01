@@ -7,48 +7,121 @@ html(lang="ja")
     link(rel="stylesheet", href="src/css/style.css")
     title Document
   body
-  header.header
-    .header__flex
-      .header__logo
-        p Clean
-      .header__hamburger
-        span.header__hamburger-line
-        span.header__hamburger-line
-        span.header__hamburger-line
-      nav.header__nav
-        ul.header__list
-          li.header__list-item
-            a(class="header__list-link", href="#") ABOUT
-          li.header__list-item
-            a(class="header__list-link", href="#") SERVICE
-          li.header__list-item
-            a(class="header__list-link", href="#") NEWS
-          li.header__list-item
-            a(class="header__list-link", href="#") COMPANY
-          li.header__list-item
-            a(class="header__list-link", href="#") CONTACT
-  .bg
-    .bg__imgbox
-      picture
-        source(srcset="src/img/bg_sp.png" media="(max-width: 599px)")
-        img(src="src/img/bg.png", class="bg__imgbox-img thumbnail")
-      .bg__text
-        p.bg__text-ja 気持ちの良い、日々を
-        p.bg__text-en Clean&Fresh
-  main 
-    section.about.wrapper
-      h2.about__sectitle
-        span.about__sectitle-gr ABOUT
-        span.about__sectitle-bg ABOUT
-      .about__text.pop01
-        p.about__text-large Let's create a
-          br
-          | beautiful society
-        p.about__text-small テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-    section.service.wrapper
-      h2.service__sectitle
-        span.service__sectitle-gr SERVICE
-        span.service__sectitle-bg SERVICE
-
-
-
+    header.header
+      .header__flex
+        .header__logo
+          p Clean
+        .header__hamburger
+          span.header__hamburger-line
+          span.header__hamburger-line
+          span.header__hamburger-line
+        nav.header__nav
+          ul.header__list
+            li.header__list-item
+              a(class="header__list-link", href="#") ABOUT
+            li.header__list-item
+              a(class="header__list-link", href="#") SERVICE
+            li.header__list-item
+              a(class="header__list-link", href="#") NEWS
+            li.header__list-item
+              a(class="header__list-link", href="#") COMPANY
+            li.header__list-item
+              a(class="header__list-link", href="#") CONTACT
+    .bg
+      .bg__imgbox
+        picture
+          source(srcset="src/img/bg_sp.png" media="(max-width: 599px)")
+          img(src="src/img/bg.png", class="bg__imgbox-img thumbnail")
+        .bg__text
+          p.bg__text-ja 気持ちの良い、日々を
+          p.bg__text-en Clean&Fresh
+    main 
+      section.about.wrapper
+        h2.about__sectitle
+          span.about__sectitle-gr ABOUT
+          span.about__sectitle-bg ABOUT
+        .about__text.pop01
+          p.about__text-large Let's create a
+            br
+            | beautiful society
+          p.about__text-small テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      section.service.wrapper
+        h2.service__sectitle
+          span.service__sectitle-gr SERVICE
+          span.service__sectitle-bg SERVICE
+        ul.service__list
+          li.service__list-item
+            a(class="service__list-link" href="#") 
+              .service__list-imgbox
+                img(src="src/img/service_1.jpg" alt="" class="service__list-img")
+              span.service__list-text クリーニング事業
+              span.service__list-box
+          li.service__list-item
+            a(class="service__list-link" href="#") 
+              .service__list-imgbox
+                img(src="src/img/service_2.jpg" alt="" class="service__list-img")
+              span.service__list-text 掃除事業
+              span.service__list-box
+          li.service__list-item
+            a(class="service__list-link" href="#") 
+              .service__list-imgbox
+                img(src="src/img/service_3.jpg" alt="" class="service__list-img")
+              span.service__list-text メンテナンス事業
+              span.service__list-box
+      section.news.wrapper
+        h2.news__sectitle
+          span.news__sectitle-gr NEWS
+          span.news__sectitle-bg NEWS
+        dl.news__box
+          dt.news__dt
+            span.news__dt-date 2022.05.01
+            span.news__dt-title news
+          dd.news__dd
+            p.news__dd-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        dl.news__box
+          dt.news__dt
+            span.news__dt-date 2022.05.01
+            span.news__dt-title news
+          dd.news__dd
+            p.news__dd-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        dl.news__box
+          dt.news__dt
+            span.news__dt-date 2022.05.01
+            span.news__dt-title news
+          dd.news__dd
+            p.news__dd-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      section.company.wrapper
+        h2.company__sectitle
+          span.company__sectitle-gr COMPANY
+          span.company__sectitle-bg COMPANY
+        .company__flex
+          dl.company__box
+            dt.company__box-dt 会社名
+            dd.company__box-dd 株式会社Clean
+            dt.company__box-dt 所在地
+            dd.company__box-dd 東京都○○○○○○○○○○
+            dt.company__box-dt 設立
+            dd.company__box-dd 2000年4月1日
+            dt.company__box-dt 代表
+            dd.company__box-dd ○○○○○○○○○○
+            dt.company__box-dt 事業内容
+            dd.company__box-dd クリーニング事業
+              br 
+              | 掃除事業
+              br 
+              | メンテナンス事業
+          .company__imgbox
+            img(src="src/img/company.jpg" alt="" class="company__imgbox-img")
+      section.contact
+        a(href="#" class="contact__sectitle") CONTACT
+    footer.footer
+      p.footer__coppy &copy; 株式会社Clean
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap" rel="stylesheet">
+    script(src='https://cdn.jsdelivr.net/npm/gsap@3.7.0/dist/gsap.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/gsap@3.7.0/dist/ScrollTrigger.min.js')
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js")
+    script(src="src/js/main.js")
