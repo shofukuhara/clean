@@ -49,7 +49,6 @@ ScrollTrigger.matchMedia({
           end: "bottom center",
           scrub: 0.8,
           delay: 0.6,
-          // markers: true,
         },
       }
     );
@@ -66,7 +65,6 @@ ScrollTrigger.matchMedia({
           start: "top center+=160",
           end: "bottom center",
           scrub: 0.8,
-          // markers: true,
         },
       }
     );
@@ -83,7 +81,6 @@ ScrollTrigger.matchMedia({
           start: "top center+=160",
           end: "bottom center",
           scrub: 0.8,
-          // markers: true,
         },
       }
     );
@@ -100,7 +97,6 @@ ScrollTrigger.matchMedia({
           start: "top center+=160",
           end: "bottom center",
           scrub: 0.8,
-          // markers: true,
         },
       }
     );
@@ -118,7 +114,6 @@ ScrollTrigger.matchMedia({
         trigger: pop01,
         start: "top center+=100",
         end: "bottom center",
-        // markers: true,
       },
       duration: 1,
       opacity: 1,
@@ -140,7 +135,6 @@ ScrollTrigger.matchMedia({
           end: "bottom center",
           scrub: 0.8,
           delay: 0.6,
-          // markers: true,
         },
       }
     );
@@ -157,7 +151,6 @@ ScrollTrigger.matchMedia({
           start: "top center+=160",
           end: "bottom center",
           scrub: 0.8,
-          // markers: true,
         },
       }
     );
@@ -174,7 +167,6 @@ ScrollTrigger.matchMedia({
           start: "top center+=160",
           end: "bottom center",
           scrub: 0.8,
-          // markers: true,
         },
       }
     );
@@ -191,7 +183,6 @@ ScrollTrigger.matchMedia({
           start: "top center+=160",
           end: "bottom center",
           scrub: 0.8,
-          // markers: true,
         },
       }
     );
@@ -209,7 +200,6 @@ ScrollTrigger.matchMedia({
         trigger: pop01,
         start: "top center+=100",
         end: "bottom center",
-        // markers: true,
       },
       duration: 1,
       opacity: 1,
@@ -231,7 +221,6 @@ ScrollTrigger.matchMedia({
           end: "bottom center",
           scrub: 0.8,
           delay: 0.6,
-          // markers: true,
         },
       }
     );
@@ -248,7 +237,6 @@ ScrollTrigger.matchMedia({
           start: "top center+=160",
           end: "bottom center",
           scrub: 0.8,
-          // markers: true,
         },
       }
     );
@@ -265,7 +253,6 @@ ScrollTrigger.matchMedia({
           start: "top center+=160",
           end: "bottom center",
           scrub: 0.8,
-          // markers: true,
         },
       }
     );
@@ -282,12 +269,10 @@ ScrollTrigger.matchMedia({
           start: "top center+=160",
           end: "bottom center",
           scrub: 0.8,
-          // markers: true,
         },
       }
     );
     const pop01 = ".pop01";
-    // const start01 = 1000;
     gsap.set(pop01, {
       opacity: 0,
       top: "10px",
@@ -299,7 +284,6 @@ ScrollTrigger.matchMedia({
         trigger: pop01,
         start: "top center+=100",
         end: "bottom center",
-        // markers: true,
       },
       duration: 1,
       opacity: 1,
