@@ -22,14 +22,21 @@ $(window).on("resize orientationchange", function () {
   $(".slider").slick("resize");
 });
 
-jQuery(function ($) {
-  $(".header__hamburger").on("click", function (e) {
-    e.stopPropagation();
-    $(this).toggleClass("active");
-    $(".header__list").toggleClass("active", $(this).hasClass("active"));
-  });
-  $(".header__list").on("click", function () {
-    $(".header__hamburger").click();
+// ハンバーガーメニュー
+const hamburger = document.querySelector(".header__hamburger");
+const list = document.querySelector(".header__list");
+const link = document.querySelectorAll(".header__list-link");
+
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("active");
+  list.classList.toggle("active");
+});
+
+link.forEach((link) => {
+  link.addEventListener("click", function () {
+    list.classList.remove("active");
+    hamburger.classList.toggle("active");
+    console.log(list);
   });
 });
 

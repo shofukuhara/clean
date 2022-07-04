@@ -7,7 +7,7 @@ html(lang="ja")
     link(rel="stylesheet", href="src/css/style.css")
     link(rel="stylesheet", href="src/css/slick-theme.css")
     link(rel="stylesheet", href="src/css/slick.css")
-    title Document
+    title clean
   body
     header.header
       .header__flex
@@ -20,15 +20,15 @@ html(lang="ja")
         nav.header__nav
           ul.header__list
             li.header__list-item
-              a(class="header__list-link", href="#") ABOUT
+              a(class="header__list-link", href="#about") ABOUT
             li.header__list-item
-              a(class="header__list-link", href="#") SERVICE
+              a(class="header__list-link", href="#service") SERVICE
             li.header__list-item
-              a(class="header__list-link", href="#") NEWS
+              a(class="header__list-link", href="#news") NEWS
             li.header__list-item
-              a(class="header__list-link", href="#") COMPANY
+              a(class="header__list-link", href="#company") COMPANY
             li.header__list-item
-              a(class="header__list-link", href="#") CONTACT
+              a(class="header__list-link", href="#contact") CONTACT
     .bg
       .bg__imgbox
         picture
@@ -38,7 +38,7 @@ html(lang="ja")
           p.bg__text-ja 気持ちの良い、日々を
           p.bg__text-en Clean&Fresh
     main 
-      section.about.wrapper
+      section.about.wrapper#about
         h2.about__sectitle
           span.about__sectitle-gr ABOUT
           span.about__sectitle-bg ABOUT
@@ -47,7 +47,7 @@ html(lang="ja")
             br
             | beautiful society
           p.about__text-small テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-      section.service.wrapper
+      section.service.wrapper#service 
         h2.service__sectitle
           span.service__sectitle-gr SERVICE
           span.service__sectitle-bg SERVICE
@@ -70,7 +70,7 @@ html(lang="ja")
                 img(src="src/img/service_3.jpg" alt="" class="service__list-img")
               span.service__list-text メンテナンス事業
               span.service__list-box
-      section.news.wrapper
+      section.news.wrapper#news 
         h2.news__sectitle
           span.news__sectitle-gr NEWS
           span.news__sectitle-bg NEWS
@@ -92,7 +92,7 @@ html(lang="ja")
             span.news__dt-title news
           dd.news__dd
             p.news__dd-text テキストテキストテキストテキストテキストテキストテキストテキスト
-      section.company.wrapper
+      section.company.wrapper#company
         h2.company__sectitle
           span.company__sectitle-gr COMPANY
           span.company__sectitle-bg COMPANY
@@ -114,7 +114,7 @@ html(lang="ja")
               | メンテナンス事業
           .company__imgbox
             img(src="src/img/company.jpg" alt="" class="company__imgbox-img")
-      section.contact
+      section.contact#contact
         a(href="#" class="contact__sectitle") CONTACT
     footer.footer
       p.footer__copy &copy; 株式会社Clean
